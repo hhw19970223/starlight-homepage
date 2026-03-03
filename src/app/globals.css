@@ -1,21 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --primary: 76, 136, 241;
-  --primary-hex: #4C88F1;
-  --foreground: #171717;
-  --background: #ffffff;
+@layer base {
+  :root {
+    /* Brand Colors */
+    --color-primary: 76 136 241;
+    --color-primary-dark: 56 116 221;
+    --color-primary-light: 106 166 255;
+    
+    /* Background */
+    --background: 255 255 255;
+    --foreground: 10 10 10;
+    
+    /* Muted */
+    --muted: 245 245 245;
+    --muted-foreground: 115 115 115;
+    
+    /* Border */
+    --border: 229 229 229;
+    
+    /* Card */
+    --card: 255 255 255;
+    --card-foreground: 10 10 10;
+  }
+
+  .dark {
+    --background: 10 10 10;
+    --foreground: 250 250 250;
+    --muted: 38 38 38;
+    --muted-foreground: 163 163 163;
+    --border: 38 38 38;
+    --card: 23 23 23;
+    --card-foreground: 250 250 250;
+  }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: system-ui, -apple-system, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
 }
 
-.bg-primary { background-color: rgb(var(--primary)); }
-.text-primary { color: rgb(var(--primary)); }
-.border-primary { border-color: rgb(var(--primary)); }
-.hover\:bg-primary:hover { background-color: rgb(var(--primary)); }
+@theme inline {
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-muted: rgb(var(--muted));
+  --color-muted-foreground: rgb(var(--muted-foreground));
+  --color-border: rgb(var(--border));
+  --color-card: rgb(var(--card));
+  --color-card-foreground: rgb(var(--card-foreground));
+  --color-primary: rgb(var(--color-primary));
+  --color-primary-dark: rgb(var(--color-primary-dark));
+  --color-primary-light: rgb(var(--color-primary-light));
+}
+
+/* Focus visible for accessibility */
+@layer base {
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+}
