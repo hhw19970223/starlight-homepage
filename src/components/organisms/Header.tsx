@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { Menu, X } from "lucide-react"
+import { Menu, X, User } from "lucide-react"
 import { useState, useEffect } from "react"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -46,7 +46,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+        <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
           <Link
             href="/"
             className={cn(
@@ -83,10 +83,26 @@ export function Header() {
           >
             {t("nav.about")}
           </Link>
+          
+          {/* Login Button */}
+          <Link
+            href="/login"
+            className={cn(
+              "flex items-center gap-2 px-5 py-2.5 rounded-full font-medium min-h-[44px] transition border-2",
+              scrolled 
+                ? "border-primary text-primary hover:bg-primary hover:text-white" 
+                : "border-white/50 text-white hover:bg-white/10"
+            )}
+          >
+            <User size={18} />
+            Login
+          </Link>
+
+          {/* Contact Button */}
           <Link
             href="#contact"
             className={cn(
-              "px-6 py-2.5 rounded-full font-semibold min-h-[44px] flex items-center transition",
+              "px-5 py-2.5 rounded-full font-semibold min-h-[44px] flex items-center transition",
               scrolled 
                 ? "bg-primary text-white hover:bg-primary-dark" 
                 : "bg-white text-primary hover:bg-white/90"
@@ -146,6 +162,14 @@ export function Header() {
             onClick={() => setMobileMenuOpen(false)}
           >
             {t("nav.about")}
+          </Link>
+          <Link
+            href="/login"
+            className="flex items-center gap-2 text-primary font-medium p-3 min-h-[44px] rounded-lg hover:bg-muted"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <User size={18} />
+            Login
           </Link>
           <Link
             href="#contact"
