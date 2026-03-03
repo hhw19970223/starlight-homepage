@@ -7,6 +7,8 @@ import { Mail } from "lucide-react"
 export function Footer() {
   const t = useTranslations()
 
+  const linkClass = "hover:text-primary hover:underline underline-offset-2 transition-colors"
+
   return (
     <footer className="bg-card border-t border-border">
       {/* Main Footer */}
@@ -25,7 +27,7 @@ export function Footer() {
               {siteConfig.seo.description}
             </p>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <a href={`mailto:${siteConfig.contact.email}`} className="flex items-center gap-2 hover:text-primary transition">
+              <a href={`mailto:${siteConfig.contact.email}`} className={`flex items-center gap-2 ${linkClass}`}>
                 <Mail size={16} />
                 {siteConfig.contact.email}
               </a>
@@ -36,10 +38,10 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t("footer.solutions")}</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link href="#solutions" className="hover:text-primary transition">{t("footer.dataAnalytics")}</Link></li>
-              <li><Link href="#solutions" className="hover:text-primary transition">{t("footer.productSelection")}</Link></li>
-              <li><Link href="#solutions" className="hover:text-primary transition">{t("footer.operations")}</Link></li>
-              <li><Link href="#solutions" className="hover:text-primary transition">{t("footer.aiAssistant")}</Link></li>
+              <li><Link href="#solutions" className={linkClass}>{t("footer.dataAnalytics")}</Link></li>
+              <li><Link href="#solutions" className={linkClass}>{t("footer.productSelection")}</Link></li>
+              <li><Link href="#solutions" className={linkClass}>{t("footer.operations")}</Link></li>
+              <li><Link href="#solutions" className={linkClass}>{t("footer.aiAssistant")}</Link></li>
             </ul>
           </div>
 
@@ -49,7 +51,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               {siteConfig.platforms.slice(0, 4).map((platform) => (
                 <li key={platform.name}>
-                  <Link href="#platforms" className="hover:text-primary transition">{platform.name}</Link>
+                  <Link href="#platforms" className={linkClass}>{platform.name}</Link>
                 </li>
               ))}
             </ul>
@@ -59,10 +61,10 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t("footer.company")}</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link href="#about" className="hover:text-primary transition">{t("footer.about")}</Link></li>
-              <li><Link href="#contact" className="hover:text-primary transition">{t("footer.contactUs")}</Link></li>
-              <li><Link href="/privacy" className="hover:text-primary transition">{t("footer.privacy")}</Link></li>
-              <li><Link href="/terms" className="hover:text-primary transition">{t("footer.terms")}</Link></li>
+              <li><Link href="#about" className={linkClass}>{t("footer.about")}</Link></li>
+              <li><Link href="#contact" className={linkClass}>{t("footer.contactUs")}</Link></li>
+              <li><Link href="/privacy" className={linkClass}>{t("footer.privacy")}</Link></li>
+              <li><Link href="/terms" className={linkClass}>{t("footer.terms")}</Link></li>
             </ul>
           </div>
         </div>
