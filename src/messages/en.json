@@ -8,7 +8,8 @@
     "solutions": "Solutions",
     "platforms": "Platforms",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "login": "Login"
   },
   "hero": {
     "badge": "Cross-Border E-Commerce Expert",
@@ -58,7 +59,8 @@
   },
   "platforms": {
     "title": "Supported Platforms",
-    "subtitle": "Connect and manage all major e-commerce platforms in one place"
+    "subtitle": "Connect and manage all major e-commerce platforms in one place",
+    "more": "...and more platforms coming soon"
   },
   "features": {
     "title": "Why Choose ABC",
@@ -90,13 +92,8 @@
     "title": "Contact Us",
     "desc": "Have questions? Our team is here to help you succeed in global e-commerce",
     "sendEmail": "Send Email",
-    "form": {
-      "name": "Your Name",
-      "email": "Email Address",
-      "company": "Company Name",
-      "message": "Message",
-      "submit": "Send Message"
-    }
+    "liveChat": "Live Chat",
+    "chatDesc": "Chat with our team"
   },
   "footer": {
     "copyright": "© 2026 ABC. All rights reserved.",
@@ -111,5 +108,75 @@
     "contactUs": "Contact Us",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "welcome": "Welcome to ABC",
+      "subtitle": "Sign in to your account to continue",
+      "emailCode": "Email Code",
+      "password": "Password",
+      "emailPlaceholder": "Email address",
+      "codePlaceholder": "Verification code",
+      "passwordPlaceholder": "Password",
+      "sendCode": "Send Code",
+      "resend": "Resend",
+      "submit": "Sign In",
+      "autoRegister": "New users will be automatically registered",
+      "orContinueWith": "or continue with",
+      "google": "Continue with Google",
+      "createAccount": "Create Account",
+      "forgotPassword": "Forgot Password?",
+      "backToHome": "Back to Home",
+      "agreeTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "brandingTitle": "Cross-Border E-Commerce Solutions",
+      "brandingSubtitle": "Empower your global e-commerce business with data analytics, smart product selection, and operations automation"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Fill in the details to register",
+      "join": "Join ABC",
+      "joinSubtitle": "Start your cross-border e-commerce journey today",
+      "namePlaceholder": "Full Name",
+      "confirmPasswordPlaceholder": "Confirm password",
+      "submit": "Create Account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "backToLogin": "Back to Login"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email to receive a verification code",
+      "enterCode": "Enter the verification code sent to your email",
+      "enterNewPassword": "Enter your new password",
+      "codeSentTo": "Code sent to",
+      "newPasswordPlaceholder": "New password",
+      "confirmNewPasswordPlaceholder": "Confirm new password",
+      "sendCode": "Send Code",
+      "verifyCode": "Verify Code",
+      "resetPassword": "Reset Password",
+      "resetTitle": "Reset Your Password",
+      "resetSubtitle": "We'll help you get back into your account",
+      "success": "Password Reset!",
+      "successMessage": "Your password has been successfully reset",
+      "backToLogin": "Back to Login"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try again",
+    "goHome": "Go home"
+  },
+  "errors": {
+    "404": {
+      "title": "404",
+      "subtitle": "Page Not Found",
+      "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+      "backHome": "Back to Home"
+    }
   }
 }
