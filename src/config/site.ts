@@ -1,12 +1,12 @@
 export const siteConfig = {
-  // 产品名称
+  // Product name
   name: 'ABC',
-  description: 'ABC - 一站式跨境电商解决方案',
+  description: 'ABC - One-Stop Cross-Border E-Commerce Solutions',
 
   // Logo
   logo: '/logo.svg',
 
-  // 主题色 RGB(76, 136, 241)
+  // Theme color RGB(76, 136, 241)
   theme: {
     primary: 'rgb(76, 136, 241)',
     primaryHex: '#4C88F1',
@@ -16,16 +16,16 @@ export const siteConfig = {
     primaryLight: 'rgb(106, 166, 255)',
   },
 
-  // 导航链接
+  // Navigation links (used by Header)
   nav: [
-    { label: '首页', href: '/' },
-    { label: '解决方案', href: '#solutions' },
-    { label: '平台支持', href: '#platforms' },
-    { label: '关于我们', href: '#about' },
-    { label: '联系我们', href: '#contact' },
+    { label: 'Home', href: '/' },
+    { label: 'Solutions', href: '#solutions' },
+    { label: 'Platforms', href: '#platforms' },
+    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '#contact' },
   ],
 
-  // 支持的电商平台
+  // Supported e-commerce platforms
   platforms: [
     { name: 'Amazon', icon: 'amazon' },
     { name: 'Shopify', icon: 'shopify' },
@@ -35,27 +35,38 @@ export const siteConfig = {
     { name: 'eBay', icon: 'ebay' },
   ],
 
-  // 页脚信息
+  // Footer information
   footer: {
     copyright: '© 2026 ABC. All rights reserved.',
     links: {
-      solutions: ['数据分析', '智能选品', '运营自动化', 'AI 助手'],
+      solutions: ['Data Analytics', 'Smart Selection', 'Operations Automation', 'AI Assistant'],
       platforms: ['Amazon', 'Shopify', 'TikTok Shop', 'Temu'],
-      company: ['关于我们', '联系我们', '隐私政策', '服务条款'],
+      company: ['About Us', 'Contact Us', 'Privacy Policy', 'Terms of Service'],
     },
   },
 
-  // 联系方式
+  // Contact information
   contact: {
     email: 'contact@abc.com',
-    phone: '+86 400-XXX-XXXX',
+    phone: '+1 800-XXX-XXXX',
   },
 
-  // SEO
+  // SEO configuration (English only)
   seo: {
-    title: 'ABC - 一站式跨境电商解决方案',
-    description: '专业的跨境电商解决方案提供商，支持 Amazon、Shopify、TikTok Shop、Temu 等主流平台，提供数据分析、智能选品、运营自动化等服务',
-    keywords: ['跨境电商', '电商解决方案', 'Amazon', 'Shopify', 'TikTok Shop', 'Temu', '智能选品', '数据分析', '运营自动化'],
+    title: 'ABC - One-Stop Cross-Border E-Commerce Solutions',
+    description: 'Professional cross-border e-commerce solution provider supporting Amazon, Shopify, TikTok Shop, Temu and other major platforms. Offering data analytics, smart product selection, operations automation and more.',
+    keywords: [
+      'cross-border e-commerce',
+      'e-commerce solutions',
+      'Amazon seller tools',
+      'Shopify integration',
+      'TikTok Shop',
+      'Temu seller',
+      'product selection',
+      'data analytics',
+      'operations automation',
+      'multi-platform management',
+    ],
   },
 } as const
 
