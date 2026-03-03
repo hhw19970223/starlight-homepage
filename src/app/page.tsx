@@ -2,7 +2,10 @@ import {
   Header,
   Footer,
   HeroSection,
-  AboutSection,
+  SolutionsSection,
+  PlatformsSection,
+  FeaturesSection,
+  CTASection,
   ContactSection,
 } from "@/components"
 
@@ -12,7 +15,10 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <AboutSection />
+        <SolutionsSection />
+        <PlatformsSection />
+        <FeaturesSection />
+        <CTASection />
         <ContactSection />
       </main>
       <Footer />

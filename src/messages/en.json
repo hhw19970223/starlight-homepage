@@ -1,41 +1,115 @@
 {
   "site": {
     "name": "ABC",
-    "description": "ABC Official Website - Innovation starts here"
+    "tagline": "Cross-Border E-Commerce Solutions"
   },
   "nav": {
     "home": "Home",
-    "products": "Products",
-    "about": "About Us",
+    "solutions": "Solutions",
+    "platforms": "Platforms",
+    "about": "About",
     "contact": "Contact"
   },
   "hero": {
-    "title": "ABC",
-    "subtitle": "Innovation starts here",
-    "learnMore": "Learn More",
-    "contactUs": "Contact Us"
-  },
-  "about": {
-    "title": "About Us",
-    "tech": {
-      "title": "🚀 Tech-Driven",
-      "desc": "Building exceptional product experiences with cutting-edge technology"
-    },
-    "innovation": {
-      "title": "💡 Innovation",
-      "desc": "Continuously exploring and solving real problems with creative solutions"
-    },
-    "userFirst": {
-      "title": "🤝 User First",
-      "desc": "Delivering the best services guided by user needs"
+    "badge": "Cross-Border E-Commerce Expert",
+    "title": "Empower Your Global",
+    "titleHighlight": "E-Commerce Business",
+    "subtitle": "One-stop cross-border e-commerce solutions covering data analytics, intelligent product selection, operations automation, and multi-platform management to help your business go global",
+    "cta": "Get Started",
+    "ctaSecondary": "Learn More",
+    "stats": {
+      "merchants": "10,000+",
+      "merchantsLabel": "Active Merchants",
+      "platforms": "6+",
+      "platformsLabel": "Platforms Supported",
+      "products": "1M+",
+      "productsLabel": "Products Analyzed",
+      "growth": "300%",
+      "growthLabel": "Avg. Sales Growth"
     }
+  },
+  "solutions": {
+    "title": "Comprehensive Solutions",
+    "subtitle": "End-to-end services for your cross-border e-commerce needs",
+    "dataAnalytics": {
+      "title": "Data Analytics",
+      "desc": "Real-time market data analysis, competitor tracking, and trend forecasting to help you make data-driven decisions"
+    },
+    "productSelection": {
+      "title": "Smart Product Selection",
+      "desc": "AI-powered product recommendation engine analyzing millions of products to identify high-potential opportunities"
+    },
+    "operations": {
+      "title": "Operations Automation",
+      "desc": "Automate inventory management, pricing optimization, and order fulfillment to boost efficiency"
+    },
+    "multiPlatform": {
+      "title": "Multi-Platform Management",
+      "desc": "Unified dashboard to manage all your stores across Amazon, Shopify, TikTok Shop, and more"
+    },
+    "aiAssistant": {
+      "title": "AI Assistant",
+      "desc": "24/7 intelligent assistant for listing optimization, customer service, and marketing content generation"
+    },
+    "globalLogistics": {
+      "title": "Global Logistics",
+      "desc": "Integrated logistics solutions with real-time tracking and optimized shipping routes worldwide"
+    }
+  },
+  "platforms": {
+    "title": "Supported Platforms",
+    "subtitle": "Connect and manage all major e-commerce platforms in one place"
+  },
+  "features": {
+    "title": "Why Choose ABC",
+    "subtitle": "Trusted by thousands of cross-border sellers worldwide",
+    "ai": {
+      "title": "AI-Powered",
+      "desc": "Advanced algorithms for product selection, pricing, and market analysis"
+    },
+    "realtime": {
+      "title": "Real-Time Data",
+      "desc": "Live market insights and competitor monitoring"
+    },
+    "global": {
+      "title": "Global Coverage",
+      "desc": "Support for major marketplaces across North America, Europe, and Asia"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "desc": "Dedicated customer success team and technical support"
+    }
+  },
+  "cta": {
+    "title": "Ready to Scale Your Business?",
+    "subtitle": "Join thousands of successful cross-border sellers using ABC",
+    "button": "Start Free Trial",
+    "note": "No credit card required • 14-day free trial"
   },
   "contact": {
     "title": "Contact Us",
-    "desc": "Have questions or partnership inquiries? Get in touch",
-    "sendEmail": "Send Email"
+    "desc": "Have questions? Our team is here to help you succeed in global e-commerce",
+    "sendEmail": "Send Email",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "message": "Message",
+      "submit": "Send Message"
+    }
   },
   "footer": {
-    "copyright": "© 2026 ABC. All rights reserved."
+    "copyright": "© 2026 ABC. All rights reserved.",
+    "solutions": "Solutions",
+    "platforms": "Platforms",
+    "company": "Company",
+    "dataAnalytics": "Data Analytics",
+    "productSelection": "Product Selection",
+    "operations": "Operations",
+    "aiAssistant": "AI Assistant",
+    "about": "About Us",
+    "contactUs": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }
