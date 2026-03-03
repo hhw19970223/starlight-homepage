@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   description: siteConfig.seo.description,
   keywords: [...siteConfig.seo.keywords],
   icons: {
-    icon: siteConfig.logo,
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
   },
 }
 
