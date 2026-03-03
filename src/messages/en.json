@@ -1,0 +1,41 @@
+{
+  "site": {
+    "name": "ABC",
+    "description": "ABC Official Website - Innovation starts here"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "ABC",
+    "subtitle": "Innovation starts here",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "About Us",
+    "tech": {
+      "title": "🚀 Tech-Driven",
+      "desc": "Building exceptional product experiences with cutting-edge technology"
+    },
+    "innovation": {
+      "title": "💡 Innovation",
+      "desc": "Continuously exploring and solving real problems with creative solutions"
+    },
+    "userFirst": {
+      "title": "🤝 User First",
+      "desc": "Delivering the best services guided by user needs"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "desc": "Have questions or partnership inquiries? Get in touch",
+    "sendEmail": "Send Email"
+  },
+  "footer": {
+    "copyright": "© 2026 ABC. All rights reserved."
+  }
+}
