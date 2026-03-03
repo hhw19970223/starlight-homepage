@@ -19,8 +19,10 @@ export function DesktopNav({ navItems, scrolled }: DesktopNavProps) {
           key={item.href}
           href={item.href}
           className={cn(
-            "text-sm font-medium transition-colors hover:text-primary",
-            scrolled ? "text-foreground" : "text-white"
+            "text-sm font-medium transition-all relative",
+            scrolled 
+              ? "text-foreground hover:text-primary" 
+              : "text-white/90 hover:text-white hover:underline underline-offset-4"
           )}
         >
           {t(item.labelKey)}
