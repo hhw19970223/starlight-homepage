@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --primary: 76, 136, 241;
+  --primary-hex: #4C88F1;
   --foreground: #171717;
   --background: #ffffff;
 }
@@ -12,3 +14,8 @@ body {
   background: var(--background);
   font-family: system-ui, -apple-system, sans-serif;
 }
+
+.bg-primary { background-color: rgb(var(--primary)); }
+.text-primary { color: rgb(var(--primary)); }
+.border-primary { border-color: rgb(var(--primary)); }
+.hover\:bg-primary:hover { background-color: rgb(var(--primary)); }
