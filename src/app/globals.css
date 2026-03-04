@@ -1,28 +1,108 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Colors */
-  --color-primary: #4C88F1;
-  --color-primary-dark: #3864D8;
-  --color-primary-light: #6AA6FF;
-  
-  /* Semantic Colors */
-  --color-background: #ffffff;
-  --color-foreground: #0a0a0a;
-  --color-muted: #f5f5f5;
-  --color-muted-foreground: #737373;
-  --color-border: #e5e5e5;
-  --color-card: #ffffff;
-  --color-card-foreground: #0a0a0a;
+  /* Primary colors - 蓝色系 */
+  --color-primary: rgb(76, 136, 241);
+  --color-primary-dark: rgb(56, 116, 221);
+  --color-primary-light: rgb(106, 166, 255);
+
+  /* Background colors - 深色主题 */
+  --color-background: rgb(10, 12, 16);
+  --color-background-elevated: rgb(18, 22, 28);
+  --color-card: rgb(22, 26, 34);
+  --color-muted: rgb(32, 38, 48);
+  --color-border: rgb(45, 55, 72);
+
+  /* Text colors */
+  --color-foreground: rgb(226, 232, 240);
+  --color-muted-foreground: rgb(148, 163, 184);
+  --color-text-primary: rgb(255, 255, 255);
+  --color-text-muted: rgb(148, 163, 184);
+
+  /* Accent colors */
+  --color-accent: rgb(99, 102, 241);
+  --color-success: rgb(34, 197, 94);
+  --color-warning: rgb(234, 179, 8);
+  --color-error: rgb(239, 68, 68);
+
+  /* Spacing */
+  --spacing-section: 5rem;
+  --spacing-section-lg: 7rem;
 }
 
-/* Base layer styles */
 @layer base {
-  body {
-    @apply bg-background text-foreground antialiased;
-  }
-  
   * {
     @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-border;
+  }
+}
+
+@layer components {
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent;
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+  }
+
+  /* Glow effect */
+  .glow {
+    box-shadow: 0 0 20px rgba(76, 136, 241, 0.3);
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 hover:border-primary/50;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }

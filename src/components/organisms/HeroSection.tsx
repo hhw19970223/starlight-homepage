@@ -1,94 +1,82 @@
-import Image from "next/image"
+"use client"
+
 import Link from "next/link"
 import { useTranslations } from "next-intl"
-import { ArrowRight, Sparkles } from "lucide-react"
-import { siteConfig } from "@/config/site"
+import { ArrowRight, Github } from "lucide-react"
 
 export function HeroSection() {
-  const t = useTranslations()
+  const t = useTranslations("hero")
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary via-primary to-primary-dark text-white pt-20 pb-16 px-4 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+    <section className="relative min-h-screen flex items-center justify-center px-4 pt-16 overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
       
-      {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20">
-          <Sparkles size={16} />
-          <span className="text-sm font-medium">{t("hero.badge")}</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8 animate-fade-in">
+          <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
+          <span className="text-sm text-muted-foreground">{t("badge")}</span>
         </div>
 
-        {/* Logo */}
-        <div className="flex justify-center mb-8">
-          <Image
-            src={siteConfig.logo}
-            alt={t("site.name")}
-            width={160}
-            height={55}
-            priority
-            className="brightness-0 invert"
-          />
-        </div>
-
-        {/* Title */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-          {t("hero.title")}
+        {/* Main headline */}
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
+          <span className="text-foreground">{t("title")}</span>
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200">
-            {t("hero.titleHighlight")}
-          </span>
+          <span className="gradient-text">{t("titleHighlight")}</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl mb-10 max-w-3xl mx-auto opacity-90 leading-relaxed">
-          {t("hero.subtitle")}
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          {t("subtitle")}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-slide-up" style={{ animationDelay: "0.2s" }}>
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-full font-semibold hover:bg-opacity-90 transition min-h-[48px] shadow-lg hover:shadow-xl"
+            className="group px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-all glow min-h-[56px] flex items-center gap-2"
           >
-            {t("hero.cta")}
-            <ArrowRight size={20} />
+            {t("cta")}
+            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link
             href="#solutions"
-            className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/50 rounded-full font-semibold hover:bg-white/10 transition min-h-[48px]"
+            className="px-8 py-4 border border-border text-foreground rounded-lg font-semibold hover:bg-card transition-all min-h-[56px] flex items-center"
           >
-            {t("hero.ctaSecondary")}
+            {t("ctaSecondary")}
           </Link>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-4 border border-border text-muted-foreground rounded-lg font-medium hover:bg-card hover:text-foreground transition-all min-h-[56px] flex items-center gap-2"
+          >
+            <Github size={20} />
+            GitHub Star
+          </a>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto">
-          <div className="text-center p-4">
-            <div className="text-3xl sm:text-4xl font-bold mb-1">{t("hero.stats.merchants")}</div>
-            <div className="text-sm opacity-80">{t("hero.stats.merchantsLabel")}</div>
-          </div>
-          <div className="text-center p-4">
-            <div className="text-3xl sm:text-4xl font-bold mb-1">{t("hero.stats.platforms")}</div>
-            <div className="text-sm opacity-80">{t("hero.stats.platformsLabel")}</div>
-          </div>
-          <div className="text-center p-4">
-            <div className="text-3xl sm:text-4xl font-bold mb-1">{t("hero.stats.products")}</div>
-            <div className="text-sm opacity-80">{t("hero.stats.productsLabel")}</div>
-          </div>
-          <div className="text-center p-4">
-            <div className="text-3xl sm:text-4xl font-bold mb-1">{t("hero.stats.growth")}</div>
-            <div className="text-sm opacity-80">{t("hero.stats.growthLabel")}</div>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+          {[
+            { value: t("stats.merchants"), label: t("stats.merchantsLabel") },
+            { value: t("stats.platforms"), label: t("stats.platformsLabel") },
+            { value: t("stats.products"), label: t("stats.productsLabel") },
+            { value: t("stats.growth"), label: t("stats.growthLabel") },
+          ].map((stat) => (
+            <div key={stat.label} className="p-4 rounded-xl bg-card/50 border border-border/50">
+              <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">{stat.value}</div>
+              <div className="text-sm text-muted-foreground">{stat.label}</div>
+            </div>
+          ))}
         </div>
-      </div>
-
-      {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="rgb(var(--background))"/>
-        </svg>
       </div>
     </section>
   )

@@ -9,12 +9,12 @@ import {
 } from "lucide-react"
 
 const solutions = [
-  { key: "dataAnalytics", icon: BarChart3, color: "text-blue-600 bg-blue-500/10" },
-  { key: "productSelection", icon: Search, color: "text-green-600 bg-green-500/10" },
-  { key: "operations", icon: Settings, color: "text-purple-600 bg-purple-500/10" },
-  { key: "multiPlatform", icon: Layout, color: "text-orange-600 bg-orange-500/10" },
-  { key: "aiAssistant", icon: Bot, color: "text-pink-600 bg-pink-500/10" },
-  { key: "globalLogistics", icon: Truck, color: "text-cyan-600 bg-cyan-500/10" },
+  { key: "dataAnalytics", icon: BarChart3, color: "text-blue-400 bg-blue-500/10" },
+  { key: "productSelection", icon: Search, color: "text-green-400 bg-green-500/10" },
+  { key: "operations", icon: Settings, color: "text-purple-400 bg-purple-500/10" },
+  { key: "multiPlatform", icon: Layout, color: "text-orange-400 bg-orange-500/10" },
+  { key: "aiAssistant", icon: Bot, color: "text-pink-400 bg-pink-500/10" },
+  { key: "globalLogistics", icon: Truck, color: "text-cyan-400 bg-cyan-500/10" },
 ]
 
 export function SolutionsSection() {
@@ -25,7 +25,7 @@ export function SolutionsSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
             {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -38,13 +38,13 @@ export function SolutionsSection() {
           {solutions.map(({ key, icon: Icon, color }) => (
             <div
               key={key}
-              className="group p-6 lg:p-8 rounded-2xl border border-border bg-card hover:shadow-xl transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 focus-within:ring-2 focus-within:ring-primary"
+              className="group p-6 lg:p-8 rounded-2xl border border-border bg-card card-hover"
               tabIndex={0}
             >
               <div className={`w-14 h-14 rounded-xl ${color} flex items-center justify-center mb-6`}>
                 <Icon size={28} />
               </div>
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
                 {t(`${key}.title`)}
               </h3>
               <p className="text-muted-foreground leading-relaxed">

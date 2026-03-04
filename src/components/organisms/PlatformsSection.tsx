@@ -1,60 +1,47 @@
 import { useTranslations } from "next-intl"
-import { 
-  ShoppingCart,
-  Store,
-  Video,
-  Package,
-  Globe,
-  ShoppingBag
-} from "lucide-react"
+import { siteConfig } from "@/config/site"
 
-const platforms = [
-  { name: "Amazon", icon: ShoppingCart, color: "#FF9900" },
-  { name: "Shopify", icon: Store, color: "#96BF48" },
-  { name: "TikTok Shop", icon: Video, color: "#000000" },
-  { name: "Temu", icon: Package, color: "#F26A2E" },
-  { name: "AliExpress", icon: Globe, color: "#E62E04" },
-  { name: "eBay", icon: ShoppingBag, color: "#0064D2" },
-]
+const platformColors: Record<string, string> = {
+  amazon: "bg-orange-500/10 text-orange-400",
+  shopify: "bg-green-500/10 text-green-400",
+  tiktok: "bg-pink-500/10 text-pink-400",
+  temu: "bg-yellow-500/10 text-yellow-400",
+  aliexpress: "bg-red-500/10 text-red-400",
+  ebay: "bg-blue-500/10 text-blue-400",
+}
 
 export function PlatformsSection() {
-  const t = useTranslations()
+  const t = useTranslations("platforms")
 
   return (
-    <section id="platforms" className="py-20 lg:py-28 px-4 sm:px-8 bg-muted">
+    <section id="platforms" className="py-20 lg:py-28 px-4 sm:px-8 bg-card/30">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            {t("platforms.title")}
+        <div className="text-center mb-4">
+          <span className="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
+            Cross-Ecosystem Infrastructure
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("platforms.subtitle")}
+            {t("subtitle")}
           </p>
         </div>
 
-        {/* Platform Logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          {platforms.map(({ name, icon: Icon, color }) => (
+        {/* Platform Icons */}
+        <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-10 mt-12">
+          {siteConfig.platforms.map((platform) => (
             <div
-              key={name}
-              className="flex flex-col items-center justify-center p-6 lg:p-8 rounded-2xl bg-card border border-border hover:shadow-lg transition-all duration-300 hover:border-primary/50 group"
+              key={platform.name}
+              className={`px-6 py-4 rounded-xl border border-border ${platformColors[platform.icon] || "bg-muted text-foreground"} hover:scale-105 transition-transform`}
             >
-              <div 
-                className="w-16 h-16 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
-                style={{ backgroundColor: `${color}15` }}
-              >
-                <Icon size={32} style={{ color }} />
-              </div>
-              <span className="font-semibold text-sm text-center">{name}</span>
+              <span className="font-semibold">{platform.name}</span>
             </div>
           ))}
         </div>
-
-        {/* More Platforms Note */}
-        <p className="text-center text-muted-foreground mt-8">
-          ...and more platforms coming soon
-        </p>
+        
+        <p className="text-center text-muted-foreground mt-8">{t("more")}</p>
       </div>
     </section>
   )
