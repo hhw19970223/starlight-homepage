@@ -1,182 +1,200 @@
 {
-  "site": {
-    "name": "ABC",
-    "tagline": "Cross-Border E-Commerce Solutions"
-  },
   "nav": {
-    "home": "Home",
     "solutions": "Solutions",
     "platforms": "Platforms",
     "about": "About",
     "contact": "Contact",
-    "login": "Login"
+    "login": "Sign In"
   },
   "hero": {
-    "badge": "Cross-Border E-Commerce Expert",
-    "title": "Empower Your Global",
-    "titleHighlight": "E-Commerce Business",
-    "subtitle": "One-stop cross-border e-commerce solutions covering data analytics, intelligent product selection, operations automation, and multi-platform management to help your business go global",
+    "badge": "Cross-border E-commerce Platform",
+    "title": "One platform.",
+    "titleHighlight": "Global success.",
+    "subtitle": "Connect sellers and buyers worldwide. Smart tools for product selection, data analytics, and automated operations across all major e-commerce platforms.",
     "cta": "Get Started",
-    "ctaSecondary": "Learn More",
+    "ctaSecondary": "Browse Solutions",
     "stats": {
-      "merchants": "10,000+",
+      "merchants": "50,000+",
       "merchantsLabel": "Active Merchants",
-      "platforms": "6+",
-      "platformsLabel": "Platforms Supported",
-      "products": "1M+",
-      "productsLabel": "Products Analyzed",
-      "growth": "300%",
-      "growthLabel": "Avg. Sales Growth"
+      "platforms": "20+",
+      "platformsLabel": "Platforms",
+      "products": "10M+",
+      "productsLabel": "Products",
+      "growth": "200%",
+      "growthLabel": "Avg Growth"
     }
   },
+  "onboarding": {
+    "title": "Start Your Global Business",
+    "subtitle": "Get your store running in 3 simple steps.",
+    "step1": {
+      "title": "Connect your store",
+      "desc": "Link your existing e-commerce accounts"
+    },
+    "step2": {
+      "title": "Import products",
+      "desc": "Sync your inventory across platforms"
+    },
+    "step3": {
+      "title": "Go global",
+      "desc": "Start selling to customers worldwide"
+    },
+    "readDocs": "Read full documentation"
+  },
+  "stats": {
+    "badge": "Platform Metrics",
+    "title": "Powering Global Commerce",
+    "merchants": { "label": "Merchants" },
+    "products": { "label": "Products" },
+    "platforms": { "label": "Platforms" },
+    "countries": { "label": "Countries" },
+    "orders": { "label": "Orders" },
+    "savings": { "label": "Cost Savings" }
+  },
+  "quality": {
+    "badge": "Quality Assurance",
+    "title": "Trusted by Global Sellers",
+    "subtitle": "Every product and supplier undergoes rigorous verification to ensure quality and reliability.",
+    "accuracy": { "label": "Data Accuracy" },
+    "verified": { "label": "Verified Suppliers" },
+    "growth": { "label": "Seller Growth" },
+    "howItWorks": "How It Works",
+    "process1": {
+      "title": "Multi-point Verification",
+      "desc": "Every supplier is verified across multiple data points including business registration, reviews, and delivery history."
+    },
+    "process2": {
+      "title": "AI Quality Scoring",
+      "desc": "Our AI evaluates products on quality metrics, pricing competitiveness, and market demand."
+    },
+    "process3": {
+      "title": "Continuous Monitoring",
+      "desc": "Ongoing monitoring ensures suppliers maintain quality standards over time."
+    },
+    "learnMore": "Learn more about our review process"
+  },
+  "caseStudy": {
+    "title": "Success in Action",
+    "subtitle": "See how sellers grow their business with our platform.",
+    "step1": {
+      "title": "Discover trending products",
+      "desc": "AI identifies high-demand products with low competition"
+    },
+    "step2": {
+      "title": "Connect with suppliers",
+      "desc": "Get verified suppliers with competitive pricing"
+    },
+    "step3": {
+      "title": "Launch across platforms",
+      "desc": "Publish optimized listings on multiple marketplaces"
+    },
+    "step4": {
+      "title": "Scale and automate",
+      "desc": "Automated inventory and order management"
+    },
+    "seeMore": "See full case studies"
+  },
+  "why": {
+    "badge": "Our Philosophy",
+    "title": "Why Choose Starlight",
+    "global": {
+      "title": "Global Reach",
+      "desc": "Access markets worldwide with localized tools and support for every major e-commerce platform.",
+      "quote": "Think global, act local."
+    },
+    "smart": {
+      "title": "AI-Powered",
+      "desc": "Smart algorithms help you find winning products, optimize pricing, and automate operations.",
+      "quote": "Let data drive your decisions."
+    },
+    "trust": {
+      "title": "Trusted Network",
+      "desc": "Verified suppliers and transparent processes build trust across the supply chain.",
+      "quote": "Trust is the foundation of commerce."
+    },
+    "aboutUs": "About Us",
+    "ourVision": "Our Vision"
+  },
+  "hotList": {
+    "title": "Trending Resources",
+    "viewAll": "View All"
+  },
+  "roleModal": {
+    "title": "How will you use Starlight?",
+    "subtitle": "Choose your path — you can always change this later.",
+    "buyer": {
+      "title": "I'm a buyer",
+      "desc": "Find products and connect with global suppliers."
+    },
+    "seller": {
+      "title": "I'm a seller",
+      "desc": "Grow my e-commerce business across platforms."
+    },
+    "explorer": {
+      "title": "Just exploring",
+      "desc": "Learn about cross-border e-commerce."
+    },
+    "cancel": "Cancel",
+    "continue": "Continue"
+  },
   "solutions": {
-    "title": "Comprehensive Solutions",
-    "subtitle": "End-to-end services for your cross-border e-commerce needs",
+    "title": "Complete E-commerce Solutions",
+    "subtitle": "Everything you need to succeed in global commerce",
     "dataAnalytics": {
       "title": "Data Analytics",
-      "desc": "Real-time market data analysis, competitor tracking, and trend forecasting to help you make data-driven decisions"
+      "desc": "Real-time market insights and trend analysis to make informed decisions."
     },
     "productSelection": {
       "title": "Smart Product Selection",
-      "desc": "AI-powered product recommendation engine analyzing millions of products to identify high-potential opportunities"
+      "desc": "AI-powered tools to discover winning products with high demand."
     },
     "operations": {
       "title": "Operations Automation",
-      "desc": "Automate inventory management, pricing optimization, and order fulfillment to boost efficiency"
+      "desc": "Streamline inventory, orders, and logistics across platforms."
     },
     "multiPlatform": {
       "title": "Multi-Platform Management",
-      "desc": "Unified dashboard to manage all your stores across Amazon, Shopify, TikTok Shop, and more"
+      "desc": "Manage all your stores from a single dashboard."
     },
     "aiAssistant": {
       "title": "AI Assistant",
-      "desc": "24/7 intelligent assistant for listing optimization, customer service, and marketing content generation"
+      "desc": "24/7 intelligent support for all your e-commerce needs."
     },
     "globalLogistics": {
       "title": "Global Logistics",
-      "desc": "Integrated logistics solutions with real-time tracking and optimized shipping routes worldwide"
+      "desc": "Integrated shipping solutions for worldwide delivery."
     }
   },
   "platforms": {
-    "title": "Supported Platforms",
-    "subtitle": "Connect and manage all major e-commerce platforms in one place",
-    "more": "...and more platforms coming soon"
+    "title": "One Platform, All Marketplaces",
+    "subtitle": "Seamlessly connect with every major e-commerce platform.",
+    "more": "...and many more integrations"
   },
   "features": {
-    "title": "Why Choose ABC",
-    "subtitle": "Trusted by thousands of cross-border sellers worldwide",
-    "ai": {
-      "title": "AI-Powered",
-      "desc": "Advanced algorithms for product selection, pricing, and market analysis"
-    },
-    "realtime": {
-      "title": "Real-Time Data",
-      "desc": "Live market insights and competitor monitoring"
-    },
-    "global": {
-      "title": "Global Coverage",
-      "desc": "Support for major marketplaces across North America, Europe, and Asia"
-    },
-    "support": {
-      "title": "24/7 Support",
-      "desc": "Dedicated customer success team and technical support"
-    }
+    "title": "Why Sellers Choose Us",
+    "subtitle": "Built for scale, designed for success",
+    "ai": { "title": "AI-Powered", "desc": "Smart automation for every task" },
+    "realtime": { "title": "Real-time Data", "desc": "Live market insights" },
+    "global": { "title": "Global Reach", "desc": "150+ countries supported" },
+    "support": { "title": "24/7 Support", "desc": "Always here to help" }
   },
   "cta": {
-    "title": "Ready to Scale Your Business?",
-    "subtitle": "Join thousands of successful cross-border sellers using ABC",
+    "title": "Ready to Go Global?",
+    "subtitle": "Join thousands of successful sellers on Starlight.",
     "button": "Start Free Trial",
-    "note": "No credit card required • 14-day free trial"
+    "note": "No credit card required"
   },
   "contact": {
-    "title": "Contact Us",
-    "desc": "Have questions? Our team is here to help you succeed in global e-commerce",
+    "title": "Get in Touch",
+    "desc": "Have questions? We're here to help.",
     "sendEmail": "Send Email",
     "liveChat": "Live Chat",
-    "chatDesc": "Chat with our team"
+    "chatDesc": "Available 24/7"
   },
   "footer": {
-    "copyright": "© 2026 ABC. All rights reserved.",
     "solutions": "Solutions",
     "platforms": "Platforms",
-    "company": "Company",
-    "dataAnalytics": "Data Analytics",
-    "productSelection": "Product Selection",
-    "operations": "Operations",
-    "aiAssistant": "AI Assistant",
-    "about": "About Us",
-    "contactUs": "Contact Us",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
-  },
-  "auth": {
-    "login": {
-      "title": "Sign In",
-      "welcome": "Welcome to ABC",
-      "subtitle": "Sign in to your account to continue",
-      "emailCode": "Email Code",
-      "password": "Password",
-      "emailPlaceholder": "Email address",
-      "codePlaceholder": "Verification code",
-      "passwordPlaceholder": "Password",
-      "sendCode": "Send Code",
-      "resend": "Resend",
-      "submit": "Sign In",
-      "autoRegister": "New users will be automatically registered",
-      "orContinueWith": "or continue with",
-      "google": "Continue with Google",
-      "createAccount": "Create Account",
-      "forgotPassword": "Forgot Password?",
-      "backToHome": "Back to Home",
-      "agreeTerms": "I agree to the",
-      "termsOfService": "Terms of Service",
-      "and": "and",
-      "privacyPolicy": "Privacy Policy",
-      "brandingTitle": "Cross-Border E-Commerce Solutions",
-      "brandingSubtitle": "Empower your global e-commerce business with data analytics, smart product selection, and operations automation"
-    },
-    "register": {
-      "title": "Create Account",
-      "subtitle": "Fill in the details to register",
-      "join": "Join ABC",
-      "joinSubtitle": "Start your cross-border e-commerce journey today",
-      "namePlaceholder": "Full Name",
-      "confirmPasswordPlaceholder": "Confirm password",
-      "submit": "Create Account",
-      "haveAccount": "Already have an account?",
-      "signIn": "Sign In",
-      "backToLogin": "Back to Login"
-    },
-    "forgotPassword": {
-      "title": "Forgot Password",
-      "subtitle": "Enter your email to receive a verification code",
-      "enterCode": "Enter the verification code sent to your email",
-      "enterNewPassword": "Enter your new password",
-      "codeSentTo": "Code sent to",
-      "newPasswordPlaceholder": "New password",
-      "confirmNewPasswordPlaceholder": "Confirm new password",
-      "sendCode": "Send Code",
-      "verifyCode": "Verify Code",
-      "resetPassword": "Reset Password",
-      "resetTitle": "Reset Your Password",
-      "resetSubtitle": "We'll help you get back into your account",
-      "success": "Password Reset!",
-      "successMessage": "Your password has been successfully reset",
-      "backToLogin": "Back to Login"
-    }
-  },
-  "common": {
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "tryAgain": "Try again",
-    "goHome": "Go home"
-  },
-  "errors": {
-    "404": {
-      "title": "404",
-      "subtitle": "Page Not Found",
-      "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
-      "backHome": "Back to Home"
-    }
+    "terms": "Terms",
+    "copyright": "© 2026 Starlight Global Commerce"
   }
 }
